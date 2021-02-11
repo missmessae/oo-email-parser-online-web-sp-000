@@ -10,8 +10,7 @@ class EmailAddressParser
   end
 
   def parse
-    parsed = []
-    parsed.uniq! << @email_addresses.split(",")
+    parsed = @email_addresses.split
     parsed
   end
 
