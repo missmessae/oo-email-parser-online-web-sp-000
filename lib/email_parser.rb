@@ -9,7 +9,7 @@ class EmailAddressParser
     @email_addresses = csv_emails
   end
 
-  def self.parse
+  def parse
     parsed = []
     parsed.uniq! << @email_addresses.split(",")
     parsed
