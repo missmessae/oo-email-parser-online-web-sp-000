@@ -2,3 +2,19 @@
 # emails. The parse method on the class should separate them into
 # unique email addresses. The delimiters to support are commas (',')
 # or whitespace (' ').
+class EmailAddressParser
+  attr_accessor :email_addresses
+  ALL_EMAILS = []
+
+  def initialize(csv_emails)
+    @email_addresses = csv_emails
+    ALL_EMAILS << @email_addresses
+  end
+
+
+  def self.parse
+
+  end
+
+
+end
